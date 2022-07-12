@@ -1,0 +1,147 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     dataset_infoGain
+Instances:    10000
+Attributes:   7
+              tipoVenta
+              talla
+              gama
+              pvp
+              provincia
+              mes
+              devolucion
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+tipoVenta = OFFLINE
+|   pvp = Entre 26 y 50 EUR
+|   |   gama = Banador: Si (96.0/42.0)
+|   |   gama = Jersey: Si (399.0/174.0)
+|   |   gama = Complementos
+|   |   |   mes = Junio: No (15.0/3.0)
+|   |   |   mes = Septiembre: No (11.0/3.0)
+|   |   |   mes = Enero: Si (47.0/13.0)
+|   |   |   mes = Diciembre: No (34.0/9.0)
+|   |   |   mes = Noviembre: No (16.0/5.0)
+|   |   |   mes = Abril: No (3.0/1.0)
+|   |   |   mes = Marzo: No (25.0/8.0)
+|   |   |   mes = Julio: No (37.0/11.0)
+|   |   |   mes = Febrero: Si (22.0/10.0)
+|   |   |   mes = Agosto: No (12.0/3.0)
+|   |   |   mes = Mayo: No (8.0/4.0)
+|   |   |   mes = Octubre: No (13.0/4.0)
+|   |   gama = Calzado: No (4.0/2.0)
+|   |   gama = Camisa: Si (102.0/44.0)
+|   |   gama = Camiseta: Si (1386.0/605.0)
+|   |   gama = Pantalon: Si (115.0/46.0)
+|   |   gama = Ropa interior: Si (1.0)
+|   |   gama = Otros: No (15.0/6.0)
+|   |   gama = Exterior: Si (0.0)
+|   |   gama = Traje: Si (0.0)
+|   |   gama = Falda: Si (0.0)
+|   |   gama = Joyeria: No (9.0/1.0)
+|   |   gama = Homewear: No (1.0)
+|   pvp = Entre 76 y 100 EUR: Si (1751.0/720.0)
+|   pvp = Entre 51 y 75 EUR: Si (2538.0/1031.0)
+|   pvp = Entre 101 y 125 EUR: Si (89.0/36.0)
+|   pvp = Entre 151 y 175 EUR: Si (92.0/37.0)
+|   pvp = Entre 0 y 25 EUR: No (464.0/106.0)
+|   pvp = Entre 126 y 150 EUR
+|   |   mes = Junio: Si (11.0/4.0)
+|   |   mes = Septiembre: No (5.0/1.0)
+|   |   mes = Enero: Si (36.0/9.0)
+|   |   mes = Diciembre: Si (16.0/7.0)
+|   |   mes = Noviembre: No (7.0/2.0)
+|   |   mes = Abril: Si (2.0)
+|   |   mes = Marzo: Si (9.0/2.0)
+|   |   mes = Julio: No (8.0/2.0)
+|   |   mes = Febrero
+|   |   |   talla = L: No (5.0)
+|   |   |   talla = S: No (3.0/1.0)
+|   |   |   talla = Unica: No (0.0)
+|   |   |   talla = M: Si (5.0/1.0)
+|   |   |   talla = Infantil: No (0.0)
+|   |   mes = Agosto: No (6.0/3.0)
+|   |   mes = Mayo: No (7.0/3.0)
+|   |   mes = Octubre: No (6.0/3.0)
+|   pvp = Mayor de 200 EUR
+|   |   mes = Junio
+|   |   |   gama = Banador: No (0.0)
+|   |   |   gama = Jersey: No (0.0)
+|   |   |   gama = Complementos: No (0.0)
+|   |   |   gama = Calzado: No (0.0)
+|   |   |   gama = Camisa: No (0.0)
+|   |   |   gama = Camiseta: No (0.0)
+|   |   |   gama = Pantalon: No (0.0)
+|   |   |   gama = Ropa interior: No (0.0)
+|   |   |   gama = Otros: No (0.0)
+|   |   |   gama = Exterior: Si (3.0/1.0)
+|   |   |   gama = Traje: No (2.0)
+|   |   |   gama = Falda: No (0.0)
+|   |   |   gama = Joyeria: No (0.0)
+|   |   |   gama = Homewear: No (0.0)
+|   |   mes = Septiembre: No (5.0)
+|   |   mes = Enero: Si (40.0/15.0)
+|   |   mes = Diciembre: Si (25.0/6.0)
+|   |   mes = Noviembre: No (13.0/4.0)
+|   |   mes = Abril: No (4.0/1.0)
+|   |   mes = Marzo: No (2.0/1.0)
+|   |   mes = Julio: No (8.0/2.0)
+|   |   mes = Febrero: Si (16.0/3.0)
+|   |   mes = Agosto: No (2.0)
+|   |   mes = Mayo
+|   |   |   gama = Banador: No (0.0)
+|   |   |   gama = Jersey: No (0.0)
+|   |   |   gama = Complementos: No (0.0)
+|   |   |   gama = Calzado: No (0.0)
+|   |   |   gama = Camisa: No (0.0)
+|   |   |   gama = Camiseta: No (0.0)
+|   |   |   gama = Pantalon: No (0.0)
+|   |   |   gama = Ropa interior: No (0.0)
+|   |   |   gama = Otros: No (0.0)
+|   |   |   gama = Exterior: Si (3.0/1.0)
+|   |   |   gama = Traje: No (2.0)
+|   |   |   gama = Falda: No (0.0)
+|   |   |   gama = Joyeria: No (0.0)
+|   |   |   gama = Homewear: No (0.0)
+|   |   mes = Octubre: No (6.0/3.0)
+|   pvp = Entre 176 y 200 EUR: Si (92.0/29.0)
+tipoVenta = ONLINE: No (2346.0/748.0)
+
+Number of Leaves  : 	86
+
+Size of the tree : 	95
+
+
+Time taken to build model: 0.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6167               61.67   %
+Incorrectly Classified Instances      3833               38.33   %
+Kappa statistic                          0.2334
+Mean absolute error                      0.4666
+Root mean squared error                  0.4847
+Relative absolute error                 93.3182 %
+Root relative squared error             96.9357 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,430    0,197    0,686      0,430    0,529      0,252    0,616     0,615     No
+                 0,803    0,570    0,585      0,803    0,677      0,252    0,616     0,573     Si
+Weighted Avg.    0,617    0,383    0,636      0,617    0,603      0,252    0,616     0,594     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2151 2849 |    a = No
+  984 4016 |    b = Si
+

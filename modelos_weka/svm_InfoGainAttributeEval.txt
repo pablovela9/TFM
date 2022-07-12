@@ -1,0 +1,134 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     dataset_infoGain
+Instances:    10000
+Attributes:   7
+              tipoVenta
+              talla
+              gama
+              pvp
+              provincia
+              mes
+              devolucion
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: No, Si
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.8638 * (normalized) tipoVenta=ONLINE
+ +      -0.0001 * (normalized) talla=L
+ +       0      * (normalized) talla=S
+ +       0.0001 * (normalized) talla=Unica
+ +      -0      * (normalized) talla=M
+ +       0      * (normalized) talla=Infantil
+ +       0.0446 * (normalized) gama=Banador
+ +       0.0444 * (normalized) gama=Jersey
+ +      -0.0997 * (normalized) gama=Complementos
+ +       0.0445 * (normalized) gama=Calzado
+ +       0.0443 * (normalized) gama=Camisa
+ +       0.0446 * (normalized) gama=Camiseta
+ +       0.0446 * (normalized) gama=Pantalon
+ +      -0.1008 * (normalized) gama=Ropa interior
+ +      -0.1008 * (normalized) gama=Otros
+ +       0.0446 * (normalized) gama=Exterior
+ +       0.0449 * (normalized) gama=Traje
+ +       0.0451 * (normalized) gama=Falda
+ +      -0.1003 * (normalized) gama=Joyeria
+ +      -0      * (normalized) gama=Homewear
+ +       0.2062 * (normalized) pvp=Entre 26 y 50 EUR
+ +       0.2062 * (normalized) pvp=Entre 76 y 100 EUR
+ +       0.2063 * (normalized) pvp=Entre 51 y 75 EUR
+ +       0.2061 * (normalized) pvp=Entre 101 y 125 EUR
+ +       0.206  * (normalized) pvp=Entre 151 y 175 EUR
+ +      -1.6488 * (normalized) pvp=Entre 0 y 25 EUR
+ +       0.2059 * (normalized) pvp=Entre 126 y 150 EUR
+ +       0.206  * (normalized) pvp=Mayor de 200 EUR
+ +       0.2062 * (normalized) pvp=Entre 176 y 200 EUR
+ +       0.272  * (normalized) provincia=Madrid
+ +      -1.584  * (normalized) provincia=Guipuzcoa
+ +       0.2722 * (normalized) provincia=Zaragoza
+ +       0.2714 * (normalized) provincia=Murcia
+ +       0.2721 * (normalized) provincia=Valladolid
+ +      -0.8638 * (normalized) provincia=Online Store
+ +      -1.5841 * (normalized) provincia=Barcelona
+ +       0.2719 * (normalized) provincia=Burgos
+ +       0.2718 * (normalized) provincia=Sevilla
+ +       0.2717 * (normalized) provincia=Asturias
+ +       0.272  * (normalized) provincia=Leon
+ +       0.272  * (normalized) provincia=Badajoz
+ +       0.2717 * (normalized) provincia=Islas Baleares
+ +       0.2719 * (normalized) provincia=Albacete
+ +       0.272  * (normalized) provincia=Valencia
+ +       0.2717 * (normalized) provincia=Alava
+ +       0.2721 * (normalized) provincia=Cordoba
+ +      -1.5846 * (normalized) provincia=Navarra
+ +       0.2724 * (normalized) provincia=Tarragona
+ +       0.2719 * (normalized) provincia=Alicante
+ +       0.2718 * (normalized) provincia=Pontevedra
+ +      -1.7271 * (normalized) provincia=Salamanca
+ +       0.2722 * (normalized) provincia=La Rioja
+ +       0.2719 * (normalized) provincia=Vizcaya
+ +       0.272  * (normalized) provincia=Malaga
+ +       0.272  * (normalized) provincia=Cantabria
+ +       0.2718 * (normalized) provincia=Granada
+ +       0.2723 * (normalized) provincia=Melilla
+ +       0.2721 * (normalized) provincia=Almeria
+ +       0.2722 * (normalized) provincia=La Coruna
+ +       0.2723 * (normalized) provincia=Las Palmas
+ +       0.2723 * (normalized) provincia=Orense
+ +      -0.0002 * (normalized) mes=Junio
+ +      -0.0003 * (normalized) mes=Septiembre
+ +       0.0001 * (normalized) mes=Enero
+ +       0      * (normalized) mes=Diciembre
+ +       0      * (normalized) mes=Noviembre
+ +      -0.0002 * (normalized) mes=Abril
+ +       0      * (normalized) mes=Marzo
+ +       0.0002 * (normalized) mes=Julio
+ +       0.0001 * (normalized) mes=Febrero
+ +       0.0002 * (normalized) mes=Agosto
+ +      -0      * (normalized) mes=Mayo
+ +       0.0001 * (normalized) mes=Octubre
+ +       0.4771
+
+Number of kernel evaluations: 167170475 (16.588% cached)
+
+
+
+Time taken to build model: 47.5 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6069               60.69   %
+Incorrectly Classified Instances      3931               39.31   %
+Kappa statistic                          0.2138
+Mean absolute error                      0.3931
+Root mean squared error                  0.627 
+Relative absolute error                 78.62   %
+Root relative squared error            125.3954 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,447    0,233    0,657      0,447    0,532      0,226    0,607     0,570     No
+                 0,767    0,553    0,581      0,767    0,661      0,226    0,607     0,562     Si
+Weighted Avg.    0,607    0,393    0,619      0,607    0,597      0,226    0,607     0,566     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2233 2767 |    a = No
+ 1164 3836 |    b = Si
+

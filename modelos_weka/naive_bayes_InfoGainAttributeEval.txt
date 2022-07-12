@@ -1,0 +1,144 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     dataset_infoGain
+Instances:    10000
+Attributes:   7
+              tipoVenta
+              talla
+              gama
+              pvp
+              provincia
+              mes
+              devolucion
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                         Class
+Attribute                   No     Si
+                         (0.5)  (0.5)
+======================================
+tipoVenta
+  OFFLINE                3403.0 4253.0
+  ONLINE                 1599.0  749.0
+  [total]                5002.0 5002.0
+
+talla
+  L                      1383.0 1538.0
+  S                       482.0  547.0
+  Unica                   664.0  258.0
+  M                      1998.0 2272.0
+  Infantil                478.0  390.0
+  [total]                5005.0 5005.0
+
+gama
+  Banador                 119.0  155.0
+  Jersey                  763.0  870.0
+  Complementos            375.0  231.0
+  Calzado                 329.0  395.0
+  Camisa                 1057.0 1127.0
+  Camiseta                993.0 1022.0
+  Pantalon                439.0  524.0
+  Ropa interior           223.0   34.0
+  Otros                   177.0   33.0
+  Exterior                382.0  492.0
+  Traje                    64.0   66.0
+  Falda                    30.0   36.0
+  Joyeria                  59.0   27.0
+  Homewear                  4.0    2.0
+  [total]                5014.0 5014.0
+
+pvp
+  Entre 26 y 50 EUR      1590.0 1562.0
+  Entre 76 y 100 EUR     1053.0 1213.0
+  Entre 51 y 75 EUR      1459.0 1732.0
+  Entre 101 y 125 EUR      46.0   60.0
+  Entre 151 y 175 EUR      62.0   65.0
+  Entre 0 y 25 EUR        582.0  128.0
+  Entre 126 y 150 EUR      88.0   90.0
+  Mayor de 200 EUR         83.0   88.0
+  Entre 176 y 200 EUR      46.0   71.0
+  [total]                5009.0 5009.0
+
+provincia
+  Madrid                 1163.0 1457.0
+  Guipuzcoa                55.0   49.0
+  Zaragoza                101.0  141.0
+  Murcia                   34.0   35.0
+  Valladolid               87.0  140.0
+  Online Store           1599.0  749.0
+  Barcelona               197.0  170.0
+  Burgos                   37.0   52.0
+  Sevilla                 325.0  419.0
+  Asturias                131.0  138.0
+  Leon                     51.0   60.0
+  Badajoz                  30.0   45.0
+  Islas Baleares          117.0  116.0
+  Albacete                 22.0   34.0
+  Valencia                158.0  229.0
+  Alava                    20.0   25.0
+  Cordoba                  45.0   83.0
+  Navarra                  25.0   21.0
+  Tarragona                24.0   21.0
+  Alicante                 85.0   86.0
+  Pontevedra               41.0   68.0
+  Salamanca                77.0   59.0
+  La Rioja                 29.0   37.0
+  Vizcaya                 124.0  167.0
+  Malaga                  182.0  207.0
+  Cantabria                42.0   60.0
+  Granada                  85.0   89.0
+  Melilla                  26.0   64.0
+  Almeria                  32.0   49.0
+  La Coruna                42.0   84.0
+  Las Palmas               23.0   37.0
+  Orense                   23.0   41.0
+  [total]                5032.0 5032.0
+
+mes
+  Junio                   493.0  470.0
+  Septiembre              287.0  220.0
+  Enero                   725.0 1124.0
+  Diciembre               573.0  508.0
+  Noviembre               545.0  276.0
+  Abril                   182.0  139.0
+  Marzo                   302.0  334.0
+  Julio                   579.0  587.0
+  Febrero                 414.0  464.0
+  Agosto                  332.0  303.0
+  Mayo                    268.0  275.0
+  Octubre                 312.0  312.0
+  [total]                5012.0 5012.0
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6136               61.36   %
+Incorrectly Classified Instances      3864               38.64   %
+Kappa statistic                          0.2272
+Mean absolute error                      0.4305
+Root mean squared error                  0.4917
+Relative absolute error                 86.1031 %
+Root relative squared error             98.3333 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,452    0,225    0,668      0,452    0,539      0,240    0,659     0,673     No
+                 0,775    0,548    0,586      0,775    0,667      0,240    0,659     0,631     Si
+Weighted Avg.    0,614    0,386    0,627      0,614    0,603      0,240    0,659     0,652     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2260 2740 |    a = No
+ 1124 3876 |    b = Si
+
